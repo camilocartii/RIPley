@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-wdth, initial-scale=1.0">
+
+        <link rel="stylesheet" href="../CSS/estilos.css">
+
+        <title>opinion</title>
+        <style>
+            table, th, td{
+                border: 1px solid black;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <nav>
+                <ul class="menu">
+                    <li><a href="../index.html">INICIO</a></li>
+                    <li><a href="menu.html">MENU</a></li>
+                    <li><a href="sucursales.html">SUCURSALES</a></li>
+                    <li><a href="#">OPINION</a></li>
+                </ul>
+            </nav>
+            <div class="title">
+                <h1>RIP <span>LEY</span></h1>
+                <h2>Sabemos de tragos</h2>
+            </div>
+        </header>
+        <main>
+            <section class="banner">
+            <div class="imgBanner">
+                <img src="../IMG/clientes.jpg" alt="Bar" srcset="">
+            </div>
+            <div class="infoBanner">
+                <div class="infoSub">
+                    <h2>la mejor <span> calidad</span></h2>
+                </div>
+                <div class="ListaBanner">
+                    <ul>
+                        <li>Conoce las opiniones de los clientes</li>
+                        <li>Danos a conocer tu opinion</li>
+                        <li>¡Completa el formulario!</li>
+                    </ul>
+                </div>
+                <div class="btnCont">
+                    <div class="btnInfo">
+                        <a href="#"><p>más <span>Informacion</span></p></a>
+                    </div>
+                </div>
+            </section>
+        </main>
+            <!-- MAIN -->
+            <di class="cliente">
+                <h2>Conoce las opiniones del cliente</h2>
+            </di>
+            <!--Tabla-->
+            <table class="tabla">
+                <tr>
+                    <td>Cliente</td>
+                    <td>Opinion</td>
+                    <td>Puntaje</td>
+                </tr>
+                <td>Camila</td>
+                <td>Excelente calidad</td>
+                <td>10 puntos</td>
+            <tr>
+                <td>Nicolas</td>
+                <td>Buen producto</td>
+                <td>9 puntos</td>
+            </tr>
+            </table>
+            <br>
+            <h3 class="puntaje">Permitenos conocer tu opinion</h3>
+        <form>
+              <label for="fnombre">Nombre</label>
+              <input type="text" id="fnombre" required placeholder=""> 
+              <br>
+              <label for="fApellido">Apellido</label>
+              <input type="text" id="fApellido" required> 
+              <br>
+              <label for="fPuntaje">Puntaje</label>
+              <input type="text" id="fPuntaje" required> 
+              <br>
+              <label for="Femail" id="femail">Email</label>
+              <input type="text" id="femail" required>
+              <input type="submit">
+        </form>
+    </body>
+</html>

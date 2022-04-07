@@ -1,0 +1,331 @@
+:root{
+    --white: var(--white)
+}
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-family: 'Roboto' , sans-serif;
+    font-size: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+header{
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    grid-template-rows: 7rem 10rem;
+}
+
+nav{
+    grid-column: 4/10;
+}
+
+.menu{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    list-style: none;
+    justify-content: space-around;
+}
+
+.menu li{
+    align-self: flex-end;
+    padding-bottom: 1rem;
+}
+
+.menu li a{
+    color: #1a261c;
+}
+
+.menu li a:hover{
+    color: #c0c3c4;
+}
+
+.title{
+    grid-column: 6/9;
+    grid-row: 2/3;
+    justify-self: center;
+    padding-top: 1.2rem;
+}
+.title2{
+    grid-column: 6/9;
+    grid-row: 2/3;
+    justify-self: center;
+    padding-top: 1.2rem;
+}
+.title h1{
+    font-size: 3rem;
+}
+
+.title h1 span{
+    font-weight: 100;
+}
+
+.title h2{
+    font-weight: 100;
+    font-size: 0.9rem;
+    text-align: center;
+}
+
+.banner{
+    display:grid;
+    grid-template-columns: repeat(12,1fr);
+    grid-template-rows: repeat(4,auto);
+    padding-top: 3rem;
+}
+
+.imgBanner{
+    grid-column: 2/8;
+    grid-row: 1/5;
+}
+
+.imgBanner img{
+width:100%;
+}
+
+.infoBanner{
+    grid-column: 8/12;
+    grid-row: 1/5;
+    background-color: #a4b8bf;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.infoSub{
+    
+    width: 65%;
+}
+
+.infoSub h2{
+    color: white;
+    padding-left: 10%;
+    line-height: 0.9%;
+}
+
+.infoSub h2 span{
+    color: #4f4f4f;
+    font-weight: 300;
+   
+}
+
+.variaciones {
+    grid-column: 5/13;
+    font-size: small;
+}
+.ListaBanner{
+    position: relative;
+    left: 10%;
+    max-width: 70%;
+}
+
+.ListaBanner ul{
+    color: white;
+    list-style: "-";
+    font-size: 0.8rem;
+}
+
+.btnCont{
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 10%;
+}
+
+.btnInfo{
+    width:10rem;
+    height:2.5rem;
+    background-color: rgba(109,135,140,0.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.btnInfo p{
+    font-size: 0.7rem;
+}
+
+.btnInfo p span{
+    color: white;
+}
+
+.servicios{
+    padding:3rem 0;
+}
+
+.boxServ{
+    height: 20rem;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+}
+
+.boxServ h3{
+    align-self: flex-start;
+    padding-left:10%;
+    padding-top: 2%;
+}
+
+.boxServ hr, .boxServ p{
+    width: 90%;
+}
+
+.btnInfoServ{
+    width: 6rem;
+    height: 1.6rem;
+    background-color: rgba(109,135,140,0.3);
+    align-self: flex-end;
+    position: relative;
+    right: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btnInfoServ a{
+    color: white;
+    font-size: 0.7rem;
+}
+
+.b1{
+    background-color: #1a261c;
+    grid-area: b1;
+}
+
+.b2{
+    background-color: #31403e;
+    grid-area: b2;
+}
+
+.b3{
+    background-color: #6d878c;
+    grid-area: b3;
+}
+
+.servCont{
+    display: grid;
+    grid-template-columns: 20% 20% 20%;
+    grid-template-areas: "b1 b2 b3";
+    justify-content: center;
+    column-gap: 5%;
+}
+
+@media only screen and (max-width: 900px){
+    .servCont{
+        grid-template-columns: 88vw;
+        grid-template-rows: auto;
+        grid-template-areas: 
+        "b1"
+        "b2"
+        "b3";
+    }
+    .boxServ{
+        margin: 2rem 0;
+    }
+
+    .infoBanner{
+        display: none;
+    }
+
+    .imgBanner{
+        grid-row: 1/5;
+        grid-column: 2/12;
+
+    };
+    .menu{
+        padding: 10px;
+        font-size: 30px;
+    }
+
+}
+
+@media only screen and (max-width: 600px) {
+    nav {
+        grid-column: 2/12;
+    }
+    .title {
+        grid-column: 4/9;
+        font-family: 'Times New Roman', Times, serif; color: rgb(2, 0, 8);
+    }
+    .title2 {
+        grid-column: 2/13;
+    }
+    
+    .variaciones {
+        grid-column: 4/12;
+        font-size: small;
+    }
+}
+    @media only screen and (max-width: 450px) {
+        nav {
+            grid-column: 2/12;
+        }
+        .title {
+            grid-column: 4/10;
+            font-family: 'Times New Roman', Times, serif; color: rgb(2, 0, 8);
+        }
+        
+}
+@media only screen and (max-width: 400px) {
+    nav {
+        grid-column: 2/12;
+    }
+    .menu {
+        font-size: 15px;
+    }
+    .variaciones {
+        grid-column: 1/13;
+        font-size: 10px;
+    }
+    @media only screen and (max-width: 400px){
+        .menu{
+            padding: 10px;
+            font-size: 30px;
+        }
+    }
+    
+    .variaciones{
+        grid-column: 6/9;
+        grid-row: 2/3;
+        justify-self: center;
+        padding-top: 1.2rem;
+    }
+    
+    .Sucursales{
+        grid-column: 6/9;
+        grid-row: 2/3;
+        justify-self: center;
+        padding-top: 1.2rem;
+        color: black
+    }
+    
+    .cliente{
+        grid-column: 6/9;
+        grid-row: 2/3;
+        justify-self: center;
+        padding-top: 1.2rem;
+        color: black
+    }
+@media only screen and (max-width: 800px) {
+        nav {
+            grid-column: 2/12;
+        }
+        .title {
+            grid-column: 4/10;
+            font-family: 'Times New Roman', Times, serif; color: rgb(2, 0, 8);
+        }
+        .title2 {
+            grid-column: 2/13;
+        }
+        
+    }
+}
